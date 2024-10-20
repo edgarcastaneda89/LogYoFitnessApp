@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-logyofitnessapp-dev-877b5-authRole",
+      "UnauthRoleArn": "arn:aws:iam::116981774708:role/amplify-logyofitnessapp-dev-877b5-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::116981774708:role/amplify-logyofitnessapp-dev-877b5-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-logyofitnessapp-dev-877b5-deployment",
+      "UnauthRoleName": "amplify-logyofitnessapp-dev-877b5-unauthRole",
+      "StackName": "amplify-logyofitnessapp-dev-877b5",
+      "StackId": "arn:aws:cloudformation:us-west-2:116981774708:stack/amplify-logyofitnessapp-dev-877b5/c3651890-8f21-11ef-9af5-06933a0e00ef",
+      "AmplifyAppId": "d2a0ruq16uv22e"
+    }
+  }
+}
