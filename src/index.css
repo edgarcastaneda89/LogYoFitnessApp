@@ -1,47 +1,135 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+/* Main container to hold both panels */
+.container {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Left panel styling */
+.left-panel {
+  flex: 1;
+  background-color: #e0f0ff;
+  display: flex;
+  flex-direction: column;
+  /* Stacks elements vertically */
+  align-items: center;
+  /* Horizontally centers the content */
+  justify-content: center;
+  /* Vertically centers the content */
+  padding: 20px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+/* Styling for the welcome message in the left panel */
+.welcome-message {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+  /* Adds space between the message and the image */
+  text-align: center;
+}
+
+/* Image inside the left panel */
+.left-panel-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+/* Right panel for the form */
+.right-panel {
+  flex: 1;
+  background-color: #0056b3;
+  /* Dark blue background */
+  color: white;
+  /* White text for contrast */
+  display: flex;
+  flex-direction: column;
+  /* Stack elements vertically */
+  align-items: center;
+  /* Center elements horizontally */
+  justify-content: center;
+  /* Center elements vertically */
+  padding: 40px;
+}
+
+/* Create an Account form container */
+.Create-an-Account-form {
+  width: 80%;
+  /* Width of the form container */
+  max-width: 400px;
+  /* Max width to prevent the form from getting too wide */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Spacing between elements */
+}
+
+/* Input fields styling */
+.input-field {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
   font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  curs
+  width: 100%;
+}
+
+/* TODO: Make Password strength section functiona; */
+.password-strength {
+  color: #d3d3d3;
+  /* Lighter text color */
+}
+
+.strength-bars {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.bar {
+  width: 30px;
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  gap: 15px;
+  /* Space between the two buttons */
+  justify-content: center;
+  /* Center the buttons */
+}
+
+/* Styling for both buttons */
+button {
+  padding: 15px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+}
+
+/* Create Account Button */
+.create-account-button {
+  background-color: #ffa500;
+  /* Orange color for the button */
+  color: white;
+}
+
+/* Sign In Button */
+.sign-in-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  /* Outline style */
+}
+
+/* Styling for Welcome heading in right panel */
+.right-panel h1 {
+  font-size: 3em;
+  /* Makes the Welcome text bigger */
+  margin-bottom: 20px;
+  /* Adds spacing below the heading */
+  color: white;
+  /* White text for better visibility */
+}
