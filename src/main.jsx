@@ -4,19 +4,19 @@ import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 
-// Import Amplify and aws-exports configuration
+// Import Amplify and aws exports config
 import { Amplify } from 'aws-amplify';
 import awsconfig from './aws-exports';
-import { ThemeProvider, Authenticator } from '@aws-amplify/ui-react'; // Import Authenticator
+import { ThemeProvider, Authenticator } from '@aws-amplify/ui-react';
 
 // Configure Amplify
 Amplify.configure(awsconfig);
 
-// Wrap your app in ThemeProvider and Authenticator.Provider
+// Needs the updated ThemeProvider and Authenticator.Provider
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider>
-      <Authenticator.Provider>  {/* Authenticator wraps the app */}
+      <Authenticator.Provider>
         <App />
       </Authenticator.Provider>
     </ThemeProvider>

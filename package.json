@@ -12,8 +12,11 @@
   "dependencies": {
     "@aws-amplify/ui-react": "^6.5.4",
     "aws-amplify": "^6.6.5",
+    "dotenv": "^16.4.5",
+    "mysql2": "^3.11.3",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "sequelize": "^6.37.5"
   },
   "devDependencies": {
     "@aws-amplify/backend": "^1.5.0",
@@ -34,5 +37,10 @@
     "tsx": "^4.19.1",
     "typescript": "^5.6.3",
     "vite": "^5.4.8"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
