@@ -1,10 +1,10 @@
-/* Main container to hold both panels */
+/* Main box*/
 .container {
   display: flex;
   height: 100vh;
 }
 
-/* Left panel styling */
+/* Welcome/Landing Page Styling*/
 .left-panel {
   flex: 1;
   background-color: #e0f0ff;
@@ -18,8 +18,8 @@
   padding: 20px;
 }
 
-/* Styling for the welcome message in the left panel */
 .welcome-message {
+  /* Styling for the welcome message in the left panel */
   font-size: 2em;
   color: #333;
   margin-bottom: 20px;
@@ -27,15 +27,15 @@
   text-align: center;
 }
 
-/* Image inside the left panel */
 .left-panel-image {
+  /* Image inside the left panel */
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;
 }
 
-/* Right panel for the form */
 .right-panel {
+  /* Right panel for the form */
   flex: 1;
   background-color: #0056b3;
   /* Dark blue background */
@@ -51,8 +51,8 @@
   padding: 40px;
 }
 
-/* Create an Account form container */
 .Create-an-Account-form {
+  /* Create an Account form container */
   width: 80%;
   /* Width of the form container */
   max-width: 400px;
@@ -63,8 +63,8 @@
   /* Spacing between elements */
 }
 
-/* Input fields styling */
 .input-field {
+  /* Input fields styling */
   padding: 15px;
   border-radius: 10px;
   border: 1px solid #ccc;
@@ -118,9 +118,8 @@ button {
 
 /* Sign In Button */
 .sign-in-button {
-  background-color: transparent;
+  background-color: #ffa500;
   color: white;
-  border: 2px solid white;
   /* Outline style */
 }
 
@@ -132,4 +131,19 @@ button {
   /* Adds spacing below the heading */
   color: white;
   /* White text for better visibility */
+}
+
+/* Success message styling */
+.success-message {
+  background-color: #4CAF50;
+  /* Green background */
+  color: white;
+  /* White text */
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 400px;
 }

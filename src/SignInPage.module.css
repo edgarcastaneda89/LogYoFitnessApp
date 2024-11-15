@@ -1,0 +1,57 @@
+/**** Styling for Sign In Page  ****/
+/* always need container and the box. container if full page */
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a66c2;
+}
+
+/* Sign-in box */
+.sign-in-box {
+    width: 400px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Title and subtitle */
+.sign-in-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* the little message inside sign in title box*/
+.sign-in-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Sign-in button */
+.sign-in-button-page {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #ffa500;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
