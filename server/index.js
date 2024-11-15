@@ -30,6 +30,10 @@ app.post('/api/create-account', async (req, res) => {  // Updated endpoint to ma
             return res.status(400).json({ message: 'Email already in use' });
         }
 
+        // Give success message if account created successfully 
+
+
+
         // Hash the password before saving it to the database
         const saltRounds = 10;
         const hashedPassword = await bcrypt.hash(password, saltRounds);
