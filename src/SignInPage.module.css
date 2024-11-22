@@ -1,11 +1,22 @@
 /**** Styling for Sign In Page  ****/
-/* always need container and the box. container if full page */
+
+/* Container for the full page */
 .sign-in-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #0a66c2;
+    /* Full height of the viewport */
+    width: 100vw;
+    /* Full width of the viewport */
+    background: url('./assets/signInImage.jpg') no-repeat center center/cover;
+    /* Background settings */
+    background-size: cover;
+    /* Ensures the image scales to cover the container */
+    margin: 0;
+    /* Removes any margin */
+    padding: 0;
+    /* Removes any padding */
 }
 
 /* Sign-in box */
@@ -26,7 +37,6 @@
     margin-bottom: 8px;
 }
 
-/* the little message inside sign in title box*/
 .sign-in-subtitle {
     font-size: 16px;
     color: #666;

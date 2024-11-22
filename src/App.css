@@ -1,8 +1,16 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  max-width: none;
+  /* Remove constraints */
+  width: 100%;
+  height: 100%;
+  /* Match the viewport height */
+  margin: 0;
+  /* Remove auto-centering margins */
+  padding: 0;
+  overflow: hidden;
+  /* Prevent scrollbars */
+  display: flex;
+  /* Optional: if you want flexbox behavior */
 }
 
 .logo {
