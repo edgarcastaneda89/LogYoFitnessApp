@@ -4,6 +4,16 @@
   height: 100vh;
 }
 
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  /* Neutral color for text */
+  background: none;
+  /* Reset background for all pages */
+}
+
 /* Welcome/Landing Page Styling*/
 .left-panel {
   flex: 1;
