@@ -1,111 +1,108 @@
 /* Apply background settings to the dashboard body */
 .dashboard-body {
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    background: url('./assets/homePage.jpg') no-repeat center center;
-    background-size: cover;
-    font-family: 'Arial', sans-serif;
-    color: #ffffff;
-    overflow: hidden;
+    margin: 0; /* Removes default margin around the page */
+    height: 100vh; /* Sets the height of the page to be 100% of the viewport height */
+    width: 100vw; /* Sets the width of the page to be 100% of the viewport width */
+    background: url('./assets/homePage.jpg') no-repeat center center; /* Sets the background image, centers it, and prevents it from repeating */
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    font-family: 'Arial', sans-serif; /* Sets the font family to Arial */
+    color: #ffffff; /* Sets the default text color to white */
+    overflow: hidden; /* Prevents scrollbars from appearing */
 }
 
 /* Dashboard container */
 .dashboard {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
+    display: flex; /* Uses flexbox layout for the dashboard */
+    flex-direction: row; /* Aligns children (sidebar and main content) in a row */
+    height: 100%; /* Ensures the dashboard takes up the full height of the viewport */
+    width: 100%; /* Ensures the dashboard takes up the full width of the viewport */
 }
 
 /* Sidebar Styling */
 .sidebar {
-    width: 250px;
-    max-width: 250px;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+    width: 250px; /* Sets the width of the sidebar to 250px */
+    max-width: 250px; /* Ensures the sidebar does not grow larger than 250px */
+    background: transparent; /* Sets the background of the sidebar to transparent */
+    display: flex; /* Uses flexbox to layout the sidebar content */
+    flex-direction: column; /* Aligns sidebar items vertically */
+    gap: 20px; /* Adds a 20px gap between the items in the sidebar */
+    padding: 20px; /* Adds padding around the sidebar content */
 }
 
 /* Main Content Section */
 .main-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
+    flex: 1; /* Makes the main content section take up the remaining space */
+    display: flex; /* Uses flexbox layout for the main content */
+    flex-direction: column; /* Aligns main content items vertically */
+    justify-content: center; /* Vertically centers the content */
+    align-items: center; /* Horizontally centers the content */
+    text-align: center; /* Centers the text inside the main content */
+    padding: 0 20px; /* Adds padding on the left and right sides */
 }
 
+/* Main Content Title */
 .main-content h1 {
     font-size: 58px;
-    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow effect to the heading text for better visibility */
 }
 
+/* Main Content Paragraph */
 .main-content p {
     font-size: 20px;
-    color: #ffffff;
-    margin-top: 10px;
-    line-height: 1.6;
-    max-width: 600px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: #ffffff; /* Sets the text color of the paragraph to white */
+    margin-top: 10px; /* Adds top margin for spacing between elements */
+    line-height: 1.6; /* Increases line height for better readability */
+    max-width: 600px; /* Restricts the maximum width of the paragraph */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds a shadow effect to the paragraph text */
 }
 
+/* Bottom-left section for the log-out button */
 .bottom-left {
-    position: absolute;
-    bottom: 20px;
-    left: 50px;
+    position: absolute; /* Positions the log-out button absolutely */
+    bottom: 20px; /* Positions the button 20px from the bottom of the viewport */
+    left: 50px; /* Positions the button 50px from the left side */
 }
 
 /* Log-out Button */
 .log-out-button {
-    background: transparent;
-    /* Transparent background */
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    /* Subtle border */
-    color: #ffffff;
-    /* White text */
-    cursor: pointer;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 20px;
-    /* Rounded corners */
-    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    background: transparent; /* Sets the background of the button to transparent */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Adds a subtle white border to the button */
+    color: #ffffff; /* Sets the text color of the button to white */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+    padding: 10px 20px; /* Adds padding inside the button */
+    font-size: 18px; /* Sets the font size of the button text */
+    border-radius: 20px; /* Rounds the corners of the button */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Adds a smooth transition for hover effects */
 }
 
 .log-out-button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    /* Semi-transparent hover effect */
-    color: #000000;
-    /* Change text color on hover */
-    transform: scale(1.1);
-    /* Enlarge slightly on hover */
+    background: rgba(255, 255, 255, 0.2); /* Adds a semi-transparent background color when hovered */
+    color: #000000; /* Changes the text color to black on hover */
+    transform: scale(1.1); /* Slightly enlarges the button when hovered */
 }
 
 /* Menu Buttons */
 .menu-button {
-    font-weight: bold;
-    color: #ffffff;
-    background: transparent;
-    border: none;
-    outline: none;
-    text-align: left;
-    padding: 12px 20px;
+    font-weight: bold; /* Makes the text bold */
+    color: #ffffff; /* Sets the text color to white */
+    background: transparent; /* Sets the background to transparent */
+    border: none; /* Removes the border */
+    outline: none; /* Removes the outline (focus) effect */
+    text-align: left; /* Aligns the text to the left */
+    padding: 12px 20px; /* Adds padding inside the button */
     font-size: 18px;
-    border-radius: 10px;
-    transition: transform 0.2s, background-color 0.2s;
-    cursor: pointer;
+    border-radius: 10px; /* Rounds the corners of the button */
+    transition: transform 0.2s, background-color 0.2s; /* Adds a smooth transition for hover effects */
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
 }
 
 .menu-button:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2); /* Adds a semi-transparent background color when hovered */
+    transform: scale(1.05); /* Slightly enlarges the button when hovered */
 }
 
+/* Active Menu Button */
 .menu-button.active {
-    background: rgba(255, 255, 255, 0.3);
-    color: #d7e113;
+    background: rgba(255, 255, 255, 0.3); /* Adds a slightly opaque background for active buttons */
+    color: #d7e113; /* Changes the text color to a yellow shade for active buttons */
 }

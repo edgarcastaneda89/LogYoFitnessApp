@@ -2,66 +2,60 @@
 
 /* Container for the full page */
 .sign-in-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    /* Full height of the viewport */
-    width: 100vw;
-    /* Full width of the viewport */
-    background: url('./assets/signInImage.jpg') no-repeat center center/cover;
-    /* Background settings */
-    background-size: cover;
-    /* Ensures the image scales to cover the container */
-    margin: 0;
-    /* Removes any margin */
-    padding: 0;
-    /* Removes any padding */
+    display: flex; /* Use flexbox layout for centering content */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    background: url('./assets/signInImage.jpg') no-repeat center center/cover; /* Set background image, centered and covering the container */
+    background-size: cover; /* Ensures the image scales to cover the container */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
 }
 
 /* Sign-in box */
 .sign-in-box {
-    width: 400px;
-    padding: 40px;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    text-align: center;
+    width: 400px; /* Set fixed width for the sign-in box */
+    padding: 40px; /* Add padding inside the box */
+    border-radius: 8px; /* Rounded corners for the box */
+    background-color: #fff; /* White background for the box */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow around the box to give it depth */
+    text-align: center; /* Center the text inside the box */
 }
 
 /* Title and subtitle */
 .sign-in-title {
     font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 8px;
+    font-weight: bold; /* Make the title bold */
+    color: #333; /* Dark gray color for the title */
+    margin-bottom: 8px; /* Add space below the title */
 }
 
 .sign-in-subtitle {
     font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
+    color: #666; /* Lighter gray color for the subtitle */
+    margin-bottom: 20px; /* Add space below the subtitle */
 }
 
 /* Input fields */
 .input-field {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px;
+    width: 100%; /* Make input fields take the full width of the container */
+    padding: 12px; /* Add padding inside the input fields */
+    margin-bottom: 15px; /* Add space below each input field */
+    border: 1px solid #ddd; /* Light gray border for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    font-size: 14px; /* Set font size for input text */
 }
 
 /* Sign-in button */
 .sign-in-button-page {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    background-color: #ffa500;
-    color: #fff;
+    width: 100%; /* Make the button take the full width of the container */
+    padding: 12px; /* Add padding inside the button */
+    margin-top: 10px; /* Add space above the button */
+    background-color: #ffa500; /* Orange background for the button */
+    color: #fff; /* White text color */
     font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
 }

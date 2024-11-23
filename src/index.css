@@ -1,159 +1,139 @@
-/* Main box*/
+/* Main box: This is the container for the entire page */
 .container {
-  display: flex;
-  height: 100vh;
+  display: flex; /* Use flexbox for layout */
+  height: 100vh; /* Set the height to 100% of the viewport height */
 }
 
+/* Body styling: Applies to the entire page */
 body {
-  margin: 0;
-  height: 100%;
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  /* Neutral color for text */
-  background: none;
-  /* Reset background for all pages */
+  margin: 0; /* Remove default margin */
+  height: 100%; /* Set body height to 100% of the viewport */
+  font-family: 'Arial', sans-serif; /* Set font family to Arial */
+  color: #333; /* Neutral color for text */
+  background: none; /* Remove default background */
 }
 
 /* Welcome/Landing Page Styling*/
 .left-panel {
   flex: 1;
-  background-color: #e0f0ff;
-  display: flex;
-  flex-direction: column;
-  /* Stacks elements vertically */
-  align-items: center;
-  /* Horizontally centers the content */
-  justify-content: center;
-  /* Vertically centers the content */
-  padding: 20px;
+  background-color: #e0f0ff; /* Light blue background */
+  display: flex; /* Use flexbox to layout the content inside */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Horizontally centers the content */
+  justify-content: center; /* Vertically centers the content */
+  padding: 20px; /* Add padding inside the panel */
 }
 
+/* Welcome message in the left panel */
 .welcome-message {
-  /* Styling for the welcome message in the left panel */
   font-size: 2em;
   color: #333;
-  margin-bottom: 20px;
-  /* Adds space between the message and the image */
-  text-align: center;
+  margin-bottom: 20px; /* Add space below the message */
+  text-align: center; /* Center the text */
 }
 
+/* Styling for the image inside the left panel */
 .left-panel-image {
-  /* Image inside the left panel */
-  max-width: 90%;
-  max-height: 90%;
-  object-fit: contain;
+  max-width: 90%; /* Make sure the image width does not exceed 90% of its container */
+  max-height: 90%; /* Limit the image height to 90% of its container */
+  object-fit: contain; /* Make the image fit without stretching */
 }
 
+/* Right panel for the form */
 .right-panel {
-  /* Right panel for the form */
   flex: 1;
-  background-color: #0056b3;
-  /* Dark blue background */
-  color: white;
-  /* White text for contrast */
-  display: flex;
-  flex-direction: column;
-  /* Stack elements vertically */
-  align-items: center;
-  /* Center elements horizontally */
-  justify-content: center;
-  /* Center elements vertically */
+  background-color: #0056b3; /* Dark blue background */
+  color: white; /* White text for contrast */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically */
   padding: 40px;
 }
 
+/* Create an Account form container */
 .Create-an-Account-form {
-  /* Create an Account form container */
-  width: 80%;
-  /* Width of the form container */
-  max-width: 400px;
-  /* Max width to prevent the form from getting too wide */
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  /* Spacing between elements */
+  width: 80%; /* Width of the form container */
+  max-width: 400px; /* Max width to prevent the form from getting too wide */
+  display: flex; /* Use flexbox to lay out the form elements */
+  flex-direction: column; /* Stack the elements vertically */
+  gap: 15px; /* Spacing between elements */
 }
 
+/* Input field styling */
 .input-field {
-  /* Input fields styling */
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 1em;
-  width: 100%;
+  padding: 15px; /* Add padding inside the input field */
+  border-radius: 10px; /* Round the corners of the input field */
+  border: 1px solid #ccc; /* Light gray border */
+  font-size: 1em; /* Set font size */
+  width: 100%; /* Make the input field take up the full width of its container */
 }
 
-/* TODO: Make Password strength section functiona; */
+/* Password strength section styling */
 .password-strength {
-  color: #d3d3d3;
-  /* Lighter text color */
+  color: #d3d3d3; /* Lighter text color for the password strength label */
 }
 
+/* Styling for the password strength bars */
 .strength-bars {
-  display: flex;
-  gap: 5px;
-  margin-top: 5px;
+  display: flex; /* Use flexbox to layout the bars horizontally */
+  gap: 5px; /* Space between the bars */
+  margin-top: 5px; /* Add some space above the bars */
 }
 
+/* Basic styling for each password strength bar */
 .bar {
   width: 30px;
   height: 5px;
-  background-color: #e0e0e0;
-  border-radius: 5px;
+  background-color: #e0e0e0; /* Light gray color for inactive bars */
+  border-radius: 5px; /* Round the corners of the bars */
 }
 
 /* Button container styling */
 .button-container {
-  display: flex;
-  gap: 15px;
-  /* Space between the two buttons */
-  justify-content: center;
-  /* Center the buttons */
+  display: flex; /* Use flexbox for layout */
+  gap: 15px; /* Add space between the buttons */
+  justify-content: center; /* Center the buttons horizontally */
 }
 
 /* Styling for both buttons */
 button {
-  padding: 15px;
-  border-radius: 25px;
+  padding: 15px; /* Add padding inside the button */
+  border-radius: 25px; /* Round the corners of the buttons */
   font-size: 1em;
-  cursor: pointer;
-  border: none;
+  cursor: pointer; /* Change the cursor to a pointer when hovering */
+  border: none; /* Remove the button border */
 }
 
 /* Create Account Button */
 .create-account-button {
-  background-color: #ffa500;
-  /* Orange color for the button */
-  color: white;
+  background-color: #ffa500; /* Orange background for the Create Account button */
+  color: white; /* White text on the button */
 }
 
 /* Sign In Button */
 .sign-in-button {
-  background-color: #ffa500;
-  color: white;
-  /* Outline style */
+  background-color: #ffa500; /* Orange background for the Sign In button */
+  color: white; /* White text on the button */
+  /* The Sign In button is styled with an outline or similar design */
 }
 
 /* Styling for Welcome heading in right panel */
 .right-panel h1 {
   font-size: 3em;
-  /* Makes the Welcome text bigger */
-  margin-bottom: 20px;
-  /* Adds spacing below the heading */
-  color: white;
-  /* White text for better visibility */
+  margin-bottom: 20px; /* Add space below the heading */
+  color: white; /* White text for better visibility */
 }
 
 /* Success message styling */
 .success-message {
-  background-color: #4CAF50;
-  /* Green background */
-  color: white;
-  /* White text */
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 15px; /* Add padding around the message */
+  border-radius: 10px; /* Round the corners of the success message box */
+  text-align: center; /* Center-align the text */
   font-size: 1.2em;
-  margin-bottom: 20px;
-  width: 80%;
-  max-width: 400px;
+  margin-bottom: 20px; /* Add space below the success message */
+  width: 80%; /* Set the width of the success message */
+  max-width: 400px; /* Set a maximum width for the success message box */
 }
